@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Line endX="-100.0" endY="542.0" layoutX="439.0" layoutY="8.0" startX="-100.00003051757812" startY="-8.0" />
+        <Pane prefHeight="550.0" prefWidth="339.0">
+            <children>
+                <Label fx:id="photo" layoutX="45.0" layoutY="244.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 50; -fx-background-color: pink;" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="introduction" layoutX="45.0" layoutY="356.0" prefHeight="180.0" prefWidth="250.0" promptText="Self introduction:" style="-fx-background-color: #d4e5ef;">
+               <font>
+                  <Font name="MV Boli" size="17.0" />
+               </font>
+            </TextField>
+            <Button fx:id="uploadAvatar" layoutX="157.0" layoutY="269.0" mnemonicParsing="false" onAction="#uploadAvatar" prefHeight="50.0" prefWidth="168.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="upload avatar" textAlignment="CENTER">
+               <font>
+                  <Font name="MV Boli" size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+        <Pane layoutX="340.0" layoutY="-1.0" prefHeight="550.0" prefWidth="409.0">
+            <children>
+                <Label layoutX="34.0" layoutY="43.0" prefHeight="70.0" prefWidth="90.0" style="-fx-background-color: #e2e7bf;" text="Name:" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="34.0" layoutY="148.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #ecedea;" text="Adress:" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="34.0" layoutY="261.0" prefHeight="70.0" prefWidth="127.0" style="-fx-background-color: #e5d4cc;" text="Phone number:" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="username" layoutX="137.0" layoutY="43.0" prefHeight="70.0" prefWidth="220.0" promptText="This is just like account?" style="-fx-background-color: #e8d3da;">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="address" layoutX="121.0" layoutY="148.0" prefHeight="70.0" prefWidth="236.0" promptText="Say something." style="-fx-background-color: #f0e7f5;">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="phone" layoutX="175.0" layoutY="261.0" prefHeight="70.0" prefWidth="182.0" promptText="Enter!" style="-fx-background-color: #c3ccd7;">
+                    <font>
+                        <Font name="MV Boli" size="17.0" />
+                    </font>
+                </TextField>
+            <Button fx:id="submit" layoutX="236.0" layoutY="434.0" mnemonicParsing="false" onAction="#Submit" prefHeight="47.0" prefWidth="117.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="submit" textAlignment="CENTER">
+               <font>
+                  <Font name="MV Boli" size="20.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

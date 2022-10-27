@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="483.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Accordion/>
+        <Pane layoutY="5.0" prefHeight="498.0" prefWidth="370.0">
+            <children>
+                <ImageView fitHeight="84.0" fitWidth="87.0" layoutX="170.0" layoutY="252.0">
+                    <image>
+                        <Image url="@image/Head.PNG"/>
+                    </image>
+                </ImageView>
+                <Label layoutX="14.0" layoutY="96.0" prefHeight="100.0" prefWidth="100.0"
+                       style="-fx-background-radius: 50; -fx-background-color: pink;" text="Left is head?"
+                       wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="add" layoutX="267.0" layoutY="14.0" mnemonicParsing="false" onAction="#Add"
+                        prefHeight="70.0" prefWidth="70.0"
+                        style="-fx-background-color: #f0e7f5; -fx-background-radius: 35;" text="Add">
+                    <font>
+                        <Font name="MV Boli" size="17.0"/>
+                    </font>
+                </Button>
+                <Label fx:id="whetherFriend" layoutX="27.0" layoutY="14.0" prefHeight="70.0" prefWidth="220.0"
+                       style="-fx-background-color: transparent;" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="15.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="selfIntroduction" layoutX="37.0" layoutY="224.0" prefHeight="247.0" prefWidth="319.0"
+                       style="-fx-background-color: #d4e5ef;">
+                    <font>
+                        <Font name="MV Boli" size="17.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="name" layoutX="128.0" layoutY="111.0" prefHeight="70.0" prefWidth="220.0"
+                       style="-fx-background-color: #e8d3da;" wrapText="true">
+                    <font>
+                        <Font name="MV Boli" size="17.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

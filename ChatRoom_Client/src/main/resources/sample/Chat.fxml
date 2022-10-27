@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="506.0" prefWidth="600.0" style="-fx-background-color: #d0d3df;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" prefHeight="60.0" prefWidth="386.0" text="Name:" textAlignment="CENTER">
+            <font>
+                <Font name="MV Boli" size="25.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutY="58.0" prefHeight="506.0" prefWidth="721.0" style="-fx-background-color: pink;">
+            <children>
+                <AnchorPane layoutY="267.0" prefHeight="242.0" prefWidth="722.0" style="-fx-background-color: white;">
+                    <children>
+                        <Button fx:id="send" layoutX="581.0" layoutY="184.0" mnemonicParsing="false" onAction="#Send" prefHeight="47.0" prefWidth="117.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="send" textAlignment="CENTER">
+                            <font>
+                                <Font name="MV Boli" size="20.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="sendFile" layoutX="391.0" layoutY="184.0" mnemonicParsing="false" onAction="#sendFile" prefHeight="47.0" prefWidth="117.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="SendFile" textAlignment="CENTER">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                  </Button>
+                      <TextArea fx:id="msgSend" layoutY="38.0" prefHeight="146.0" prefWidth="722.0" style="-fx-background-color: transparent; -fx-font-family: OpenSansEmoji; -fx-font-size: 20;" text="&#10;" />
+                  <ImageView layoutX="34.0" layoutY="6.0">
+                     <image>
+                        <Image url="@image/Emoji.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="emoji" layoutX="34.0" layoutY="6.0" mnemonicParsing="false" onAction="#OpenEmoji" prefHeight="32.0" prefWidth="32.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="shutdown" layoutX="181.0" layoutY="184.0" mnemonicParsing="false" onAction="#shutdown" prefHeight="47.0" prefWidth="117.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="shutdown" textAlignment="CENTER">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sendvocice" layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onAction="#sendvoice" prefHeight="47.0" prefWidth="117.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="Voice" textAlignment="CENTER">
+                     <font>
+                        <Font name="MV Boli" size="20.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+                <TextArea fx:id="msgDisplay" editable="false" prefHeight="268.0" prefWidth="722.0" style="-fx-font-family: OpenSansEmoji;">
+               <font>
+                  <Font size="20.0" />
+               </font></TextArea>
+            </children>
+        </AnchorPane>
+      <Button fx:id="getHistory" layoutX="581.0" layoutY="5.0" mnemonicParsing="false" onAction="#getHistory" prefHeight="50.0" prefWidth="134.0" style="-fx-background-color: #e8e2d6; -fx-background-radius: 20;" styleClass="LoginButton" text="getHistory" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

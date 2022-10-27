@@ -1,0 +1,9 @@
+#login{
+    -fx-background-color: white;
+    -fx-border-color: #fff0f5;
+    -fx-border-radius: 20px;
+
+}
+#login:hover{
+    -fx-background-color: #eccfd7;
+}
